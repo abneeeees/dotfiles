@@ -1,6 +1,6 @@
 ## Fastfetch
 
-chafa --size=30x30 ~/Pictures/Camera/yeezus.jpg > /home/avneesh/ascii.txt
+chafa --size=30x30 ~/path/to/image.jpg > /path/to/ascii.txt
 
 ## Alias
 alias c='cd ..'
