@@ -1,106 +1,93 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+    "logo": {
+        "source": "/home/avneesh/ascii.txt", 
+        "padding": {
+            "top": 1,
+            "left": 1
+        }
+    },
+    
+    "display": {
+        "separator": ": "
+    },
+    
 
-
-  "display": {
-    "separator": " : "
-  },
-
-  "modules": [
-    {
-      "type": "custom",
-      "format": "\u001b[36m    OS Info"
-    },
-   {
-      "type": "custom",
-      "format": "┌──────────────────────────────────────────┐"
-    },
-
-    {
-      "type": "os",
-      "keyColor": "red"
-    },
-    {
-      "type": "kernel",
-      "keyColor": "red"
-    },
-    {
-      "type": "packages",
-      "keyColor": "green"
-    },
-    {
-      "type": "display",
-      "keyColor": "green"
-    },
-    {
-      "type": "wm",
-      "format": "{2}",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "terminalfont",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "terminal",
-      "format": "{1}",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "custom",
-      "format": "└──────────────────────────────────────────┘"
-    },
+    "modules": [
     "break",
+    
+    "title",
+    
+    "separator",
+
     {
-      "type": "title",
+        "type":"os",
+        "key": "OS",
+        "keyColor": "cyan"
     },
+    
     {
-      "type": "custom",
-      "format": "┌──────────────────────────────────────────┐"
+        "type":"host",
+        // "format": "",
+        "key": "Lapi",
+        "keyColor": "cyan"
     },
+    
     {
-      "type": "cpu",
-      "format": "{1}",
-      "keyColor": "blue"
+        "type":"uptime",
+        "key": "Uptime",
+        "keyColor": "cyan"
     },
+    
     {
-      "type": "gpu",
-      "format": "{1}",
-      "keyColor": "blue"
+        "type":"packages",
+        "key": "dnfs",
+        "keyColor": "cyan"
     },
+
     {
-      "type": "shell",
-      "format": "{1} {4}",
-      "keyColor": "magenta"
+        "type":"shell",
+        "key": "shell",
+        "keyColor": "cyan"
     },
+
     {
-      "type": "memory",
-      "keyColor": "magenta"
+        "type":"display",
+        "key": "Screen",
+        "keyColor": "cyan"
     },
+
     {
-      "type": "command",
-      "keyColor": "red",
-      "text": "birth=$(stat -c %W /); now=$(date +%s); echo $(((now - birth) / 86400)) days"
+        "type":"cpu",
+        "key": "CPU",
+        "keyColor": "cyan"
     },
+        
     {
-      "type": "uptime",
-      "keyColor": "red"
+        "type":"gpu",
+        "key": "GPU",
+        "keyColor": "cyan"
     },
+    
     {
-      "type": "host",
-      "format": "{name}{?vendor} ({vendor}){?}",
-      "keyColor": "red"
+        "type":"de",
+        // "key": "IDK",
+        "keyColor": "cyan"
     },
+
     {
-      "type": "custom",
-      "format": "└──────────────────────────────────────────┘"
+        "type":"swap",
+        "key": "Virtual",
+        "keyColor": "cyan"
     },
+
     {
-      "type": "colors",
-      "paddingLeft": 2,
-      "symbol": "circle"
+        "type":"disk",
+        "key": "Storage",
+        "keyColor": "cyan"
     },
-    "break"
+    
+    "break"    
   ]
 }
-
